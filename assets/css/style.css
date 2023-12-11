@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 1280px) {
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-container > .col-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 30%;
+    background-color: rgb(242, 242, 242);
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+  .col-1 > .cr {
+    text-decoration: none;
+    color: rgb(4, 28, 4);
+    transition: all 0.3s ease-in-out;
+  }
+  .col-1 > .cr:hover {
+    text-decoration: none;
+    color: rgb(1, 59, 1);
+  }
+
+  .col-1 > .current {
+    color: rgb(192, 204, 204);
+  }
+  .col-1 > .link {
+    text-decoration: none;
+    color: black;
+    font-family: segoe UI;
+    transition: all 0.5s ease-in-out;
+  }
+  .col-1 > .link:hover {
+    color: grey;
+  }
+  .main-container > .col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    padding: 5rem;
+  }
+  .col-2 > .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+  }
+  .img-container > img {
+    height: 30rem;
+    width: 100%;
+    object-fit: contain;
+    animation: fadeInRight 0.9s ease-in-out;
+  }
+  .col-2 > .heroInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 15px;
+    margin-top: 10rem;
+  }
+  .heroInfo > p {
+    font-family: afacad;
+    color: grey;
+    font-size: large;
+    text-align: center;
+  }
+  .heroInfo > h1 {
+    font-family: allura;
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+  }
+  .main-container > .col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    height: 100vh;
+    width: 20%;
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  .col-3 > a > img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .main-container > .cr {
+    display: none;
+  }
+  .about-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+  .about-main-container > .col-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 13vw;
+    background-color: rgb(242, 242, 242);
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+  .col-1 > .menu {
+    display: none;
+  }
+  .col-1 > .cr {
+    text-decoration: none;
+    color: rgb(4, 28, 4);
+    transition: all 0.3s ease-in-out;
+  }
+  .col-1 > .cr:hover {
+    text-decoration: none;
+    color: rgb(1, 59, 1);
+  }
+  .col-1 > h1 {
+    display: none;
+  }
+
+  .col-1 > .link {
+    text-decoration: none;
+    color: black;
+    font-family: segoe UI;
+    transition: all 0.5s ease-in-out;
+  }
+  .col-1 > .link:hover {
+    color: grey;
+  }
+  .col-1 > .current {
+    color: rgb(192, 204, 204);
+  }
+  .about-main-container > .col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    flex-direction: column;
+    row-gap: 8rem;
+    padding: 5rem;
+    height: 100vh;
+    text-align: center;
+    background: url(../images/bkgd-1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .about-main-container > .col-2 > p {
+    font-family: afacad;
+    color: rgb(169, 169, 169);
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px white;
+    width: 50%;
+    animation: fadeInRight 1s ease-in-out;
+  }
+}
+@media screen and (max-width: 1280px) {
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    row-gap: 3rem;
+  }
+  .main-container > .col-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(242, 242, 242);
+  }
+  .col-1 > .current {
+    color: rgb(192, 204, 204);
+  }
+  .col-1 > .link {
+    text-decoration: none;
+    color: black;
+    font-family: segoe UI;
+    transition: all 0.5s ease-in-out;
+  }
+  .col-1 > .link:hover {
+    color: grey;
+  }
+  .col-1 > .current {
+    color: rgb(192, 204, 204);
+  }
+  .col-1 > h1 {
+    font-family: allura;
+  }
+  .main-container > .col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .col-2 > .img-container {
+    height: 20rem;
+  }
+  .col-2 > .heroInfo {
+    width: 50%;
+    animation: fadeInRight 1.2s ease-in-out;
+  }
+  .col-2 > .img-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: fadeInRight 0.9s ease-in-out;
+  }
+  .heroInfo > p {
+    font-family: afacad;
+    color: grey;
+    font-size: large;
+    text-align: center;
+  }
+  .heroInfo > h1 {
+    font-family: allura;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container > .col-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 4rem;
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  .main-container > .cr {
+    padding: 3rem;
+  }
+  .main-container > .cr > a {
+    padding: 3rem;
+    text-decoration: none;
+    color: rgb(82, 118, 82);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .main-container > .cr > a:hover {
+    color: rgb(1, 59, 1);
+  }
+
+  .about-main-container > .col-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgb(242, 242, 242);
+  }
+
+  .col-1 > .link {
+    text-decoration: none;
+    color: black;
+    font-family: segoe UI;
+    transition: all 0.5s ease-in-out;
+  }
+  .col-1 > .link:hover {
+    color: grey;
+  }
+  .col-1 > .current {
+    color: rgb(192, 204, 204);
+  }
+  .col-1 > .cr {
+    display: none;
+  }
+  .col-1 > .menu {
+    display: inline-block;
+  }
+  .col-1 > h1 {
+    font-family: allura;
+  }
+  .about-main-container > .col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 8rem;
+    padding: 5rem;
+    height: 100vh;
+    text-align: center;
+    background: url(../images/bkgd-1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .col-2 > p {
+    font-family: afacad;
+    color: rgb(169, 169, 169);
+    text-align: center;
+    text-shadow: 2px 2px white;
+    width: 100%;
+    animation: fadeInRight 1s ease-in-out;
+  }
+}
