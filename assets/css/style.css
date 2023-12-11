@@ -185,13 +185,13 @@ body {
     height: 100vh;
     text-align: center;
     background: url(../images/bkgd-1.png);
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
   .about-main-container > .col-2 > p {
     font-family: afacad;
-    color: rgb(169, 169, 169);
+    color: rgb(74, 74, 74);
     font-size: large;
     text-align: center;
     text-shadow: 2px 2px white;
